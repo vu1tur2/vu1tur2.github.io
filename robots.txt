@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vu1tur2.github.io/bando/sitemap.xml
