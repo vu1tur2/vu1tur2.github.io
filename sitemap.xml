@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://계정명.github.io/리포지토리명/</loc></url>
-<url><loc>https://계정명.github.io/리포지토리명/</loc></url>
-<url><loc>https://계정명.github.io/리포지토리명/</loc></url>
-<url><loc>https://계정명.github.io/리포지토리명/</loc></url>
-<url><loc>https://계정명.github.io/리포지토리명/</loc></url>
 
+    <url><loc>https://vu1tur2.github.io/bando/</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/01_partnership.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/01_products.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/02_products.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/03_products.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/about.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/admin.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/b2b.html</loc></url>
+    <url><loc>https://vu1tur2.github.io/bando/index.html</loc></url>
+    
 </urlset>
