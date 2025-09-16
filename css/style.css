@@ -527,7 +527,7 @@ select {
 }
 
 
-/* product.html 공용 css */
+/* jaepum.html  공용 css */
 
 .n_contents1 {
   width: 1200px;
@@ -765,4 +765,105 @@ select {
   color: #fff;
   border-radius: 20px;
   text-decoration: none;
+}
+
+
+/* products.html 공용 css */
+
+ .contents01 {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+ }
+
+.cbox01 {
+  display: flex;
+  justify-content: center; /* <-- 이것만 추가하면 됨 */
+  gap: 200px;
+  padding-top: 100px;
+}
+
+.cbox01 > a {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.cbox01 img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: block;
+}
+
+.cbox01 p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+  position: static;
+}
+
+.pagination-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  margin: 20px 0;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.pagination {
+  display: flex;           /* 가로 정렬 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;     /* 세로 정렬 */
+  gap: 8px;                /* 버튼 사이 여백 */
+  overflow: visible;       /* 오버플로우 안나오도록 */
+  height: auto;            /* 높이를 컨텐츠에 맞춤 */
+  padding: 10px 0;        
+}
+
+.pagination a {
+  margin: 0 8px;
+  padding: 6px 12px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  color: #333;
+  scroll-snap-align: center;
+  border-radius: 50px;
+}
+
+.pagination a.active {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.pagination button {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 4px 8px;           /* 버튼 크기를 줄임 */
+  margin: 0 2px;
+  font-size: 14px;
+  border-radius: 50%;      
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+/* 활성 페이지 버튼 강조 */
+.pagination button.active {
+  background: #999;
+  color: white;
+  font-weight: bold;
 }
