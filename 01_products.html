@@ -47,80 +47,36 @@
          </nav>
         </header>
 
-        
+
     <div class="n_contents1">
-      <div class="qna-header1">
-        <h2>Fatal Doppler</h2>
+       <div class="qna-header1">
+         <h2>Fatal Doppler</h2>
+       </div>
+    </div>
+
+
+      <!-- 상품 시작  -->
+      <div class="contents01">
+        <div class="cbox01">
+            <a href="jaepum1.html">
+                <img src="img/fetal_doppler_jaepum1_1.jpg" alt="제품 이미지">
+                <p>Fetal Doppler (CONTEC10A) </p>
+            </a>
+            <a href="#">
+                <img src="img/fetal_doppler_jaepum1_1.jpg" alt="제품이미지">
+                <p>Fetal Doppler (CONTEC10A) </p>
+            </a>
+        </div>
       </div>
+    <!-- 상품 끝 -->
+
+    <!-- 페이지버튼 시작 -->
+      <div class="pagination-container">
+      <div class="pagination"></div>
     </div>
+    <!-- 페이지버튼 끝  -->
 
-    <div id="j-contents">
-        <div id="jbox1">
-            <div class="slider-container">
-                <!-- 이전 버튼 -->
-                <button class="prev-btn"></button>
-
-                <!-- 슬라이더 래퍼 -->
-                <div class="slider-wrapper">
-                <img src="img/product_1_1.png" class="active" alt="제품 이미지 1" />
-                <img src="img/product_1_2.png" alt="제품 이미지 2" />
-                <img src="img/black.png" alt="제품 이미지 3" />
-                </div>
-
-                <!-- 다음 버튼 -->
-                <button class="next-btn"></button>
-                
-                <!-- 미리보기 인디케이터 -->
-                <div class="indicator-container">
-                    <div class="indicator active">
-                        <img src="img/product_1_1.png" alt="미리보기 1">
-                    </div>
-                    <div class="indicator">
-                        <img src="img/product_1_2.png" alt="미리보기 2">
-                    </div>
-                    <div class="indicator">
-                        <img src="img/black.png" alt="미리보기 3">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="jbox2">
-            <h3>[Fetal Doppler] 휴대용 태아심음측정기</h3>
-            <div class="product-description">
-                <p class="title">
-                    태아 초음파 측정기의 작동 원리 및 주요 기능 
-                </p>
-                <p class="summary">
-                    본 기기는 도플러 효과를 이용해 태아의 심장 소리를 듣고 심박수를 확인하는 장비입니다. 
-                    약 3MHz의 초음파를 복부에 보내면, 태아 심장에서 반사된 신호를 통해 심박수를 계산합니다. 
-                    측정된 심박수는 화면에 표시되고, 심장 소리는 스피커로 들을 수 있습니다.
-                </p>
-                <div class="more-text" style="display: none;">
-                    <div class="feature-box"><h4>태아 초음아 측정기의 주요 기능</h4></div>
-                    <div class="feature-box">- 태아 심음 감지 및 출력</div>
-                    <div class="feature-box">- 심박수 표시 (LCD 화면)</div>
-                    <div class="feature-box">- 볼륨 조절 기능</div>
-                    <div class="feature-box">- 배터리 전원 상태 표시</div>
-                    <div class="feature-box">※ 본 제품은 의료기기 인증을 받았으며 정기적 품질검수를 시행하고 있습니다.</div>
-                </div>
-                <button class="toggle-btn">
-                  <img src="img/down.png" alt="더보기 버튼" class="toggle-icon">
-                </button>
-            </div>
-            <a href="https://shopping.naver.com" class="purchase-btn" target="_blank">구매하러가기</a>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-     <!-- 푸터 시작 -->
+    <!-- 푸터 시작 -->
         <footer>
             <div class="flogo">
                 <a href="./"><img src="img/flogo.png" alt="반도메딕스 로고"></a>
@@ -202,55 +158,63 @@
     </div>
     <!-- 모달창 끝 -->
 
-    <!-- 슬라이드 이미지, 인디케이터 통합하는 스크립트 -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll('#jbox1 .slider-wrapper img');
-    const indicators = document.querySelectorAll('#jbox1 .indicator-container .indicator');
-    let currentIndex = 0;
 
-    function updateSlide() {
-        slides.forEach((img, idx) => {
-        img.classList.toggle('active', idx === currentIndex);
-        });
-        indicators.forEach((indicator, idx) => {
-        indicator.classList.toggle('active', idx === currentIndex);
-        });
+    <!-- 제품 목록 페이지 스크립트 -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const pageSize = 8;
+    const pagesToShow = 4;
+    let currentPage = 1;
+    let groupStart = 1;
+
+    const products = document.querySelectorAll(".cbox01 a");
+    const nav = document.querySelector(".pagination");
+
+    function calculateTotalPages() {
+        return Math.ceil(products.length / pageSize) || 1;
     }
 
-    document.querySelector('#jbox1 .prev-btn').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlide();
-    });
+    function showProducts(page) {
+        currentPage = page;
+        const totalPages = calculateTotalPages();
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (groupStart > totalPages) groupStart = Math.max(1, totalPages - pagesToShow + 1);
 
-    document.querySelector('#jbox1 .next-btn').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlide();
-    });
-
-    indicators.forEach((indicator, idx) => {
-        indicator.addEventListener('click', () => {
-        currentIndex = idx;
-        updateSlide();
+        products.forEach((p, idx) => {
+        p.style.display = idx >= (currentPage - 1) * pageSize && idx < currentPage * pageSize ? "inline-block" : "none";
         });
-    });
 
-    updateSlide(); // 초기 상태 호출
-    });
-    </script>
-    
-    <!-- 제품 상세내용 더보기 스크립트 -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector('.toggle-btn');
-    const summary = document.querySelector('.summary');
-    const moreText = document.querySelector('.more-text');
+        renderPagination();
+    }
 
-    toggleButton.addEventListener('click', function () {
-        const isExpanded = summary.classList.toggle('expanded');
-        moreText.style.display = isExpanded ? 'block' : 'none';
-        toggleButton.classList.toggle('rotated', isExpanded);
-    });
+    function renderPagination() {
+        const totalPages = calculateTotalPages();
+        nav.innerHTML = "";
+        if (groupStart > 1) {
+        const prev = document.createElement('button');
+        prev.textContent = '◀';
+        prev.onclick = () => { groupStart = Math.max(1, groupStart - pagesToShow); showProducts(groupStart); };
+        nav.appendChild(prev);
+        }
+
+        const end = Math.min(groupStart + pagesToShow - 1, totalPages);
+        for (let i = groupStart; i <= end; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i;
+        if (i === currentPage) btn.classList.add('active');
+        btn.onclick = () => showProducts(i);
+        nav.appendChild(btn);
+        }
+
+        if (end < totalPages) {
+        const next = document.createElement('button');
+        next.textContent = '▶';
+        next.onclick = () => { groupStart += pagesToShow; showProducts(groupStart); };
+        nav.appendChild(next);
+        }
+    }
+
+    showProducts(1); // 초기 호출
     });
     </script>
 
