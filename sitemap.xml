@@ -4,15 +4,15 @@
     <!-- 메인페이지 index.html 와 같음 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/</loc>
-        <lastmod>2025-08-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <lastmod>2025-09-16</lastmod>      
+        <changefreq>weekly</changefreq>    
+        <priority>1.0</priority>         
     </url>
     
     <!-- 문의완료 페이지 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/01_partnership.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-09-16</lastmod>  
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -20,7 +20,7 @@
     <!-- Fetal Doppler 페이지 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/01_products.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-09-16</lastmod>  
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -28,7 +28,7 @@
     <!-- Nebulizer 페이지 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/02_products.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-09-16</lastmod>  
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -36,7 +36,7 @@
     <!-- Pulse Oximeter 페이지 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/03_products.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-09-16</lastmod>  
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -44,7 +44,7 @@
     <!-- 회사소개 페이지 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/about.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-09-16</lastmod>  
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -52,12 +52,11 @@
     <!-- B2B 문의 페이지 -->
     <url>
         <loc>https://vu1tur2.github.io/bando/b2b.html</loc>
-        <lastmod>2025-08-27</lastmod>
+        <lastmod>2025-09-16</lastmod>  
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
-
 
 
 
