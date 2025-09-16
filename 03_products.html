@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulse Oximeter 제품소개</title>
+    <title>Fetal Doppler 제품소개</title>
 
     <!-- css 연결 코드 -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/script.js"></script>
-
-
+    
 </head>
 <body>
     
@@ -48,84 +47,36 @@
          </nav>
         </header>
 
-        
+
     <div class="n_contents1">
-      <div class="qna-header1">
-        <h2>Pulse Oximeter</h2>
+       <div class="qna-header1">
+         <h2>Fatal Doppler</h2>
+       </div>
+    </div>
+
+
+      <!-- 상품 시작  -->
+      <div class="contents01">
+        <div class="cbox01">
+            <a href="jaepum3.html">
+                <img src="img/pulse_oximeter_jaepum3_1.jpg" alt="제품 이미지">
+                <p>Pulse Oximeter (CMS50-PRO) </p>
+            </a>
+            <a href="jaepum5.html">
+                <img src="img/pulse_oximeter_jaepum5_1.jpg" alt="제품이미지">
+                <p>Pulse Oximeter (CMS50Q1) </p>
+            </a>
+        </div>
       </div>
+    <!-- 상품 끝 -->
+
+    <!-- 페이지버튼 시작 -->
+      <div class="pagination-container">
+      <div class="pagination"></div>
     </div>
+    <!-- 페이지버튼 끝  -->
 
-    <div id="j-contents">
-        <div id="jbox1">
-            <div class="slider-container">
-                <!-- 이전 버튼 -->
-                <button class="prev-btn"></button>
-
-                <!-- 슬라이더 래퍼 -->
-                <div class="slider-wrapper">
-                <img src="img/product_3_1.png" class="active" alt="제품 이미지 1" />
-                <img src="img/product_3_2.png" alt="제품 이미지 2" />
-                <img src="img/black.png" alt="제품 이미지 3" />
-                </div>
-
-                <!-- 다음 버튼 -->
-                <button class="next-btn"></button>
-                
-                <!-- 미리보기 인디케이터 -->
-                <div class="indicator-container">
-                    <div class="indicator active">
-                        <img src="img/product_3_1.png" alt="미리보기 1">
-                    </div>
-                    <div class="indicator">
-                        <img src="img/product_3_2.png" alt="미리보기 2">
-                    </div>
-                    <div class="indicator">
-                        <img src="img/black.png" alt="미리보기 3">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="jbox2">
-            <h3>[Pulse Oximeter] 산소포화도측정기</h3>
-            <div class="product-description">
-                <p class="title">
-                    산소포화도측정기의 작동 원리 및 주요 기능 
-                </p>
-                <p class="summary">
-                    본 기기는 혈액 내의 산소 포화도와 맥박수를 측정할 수 있는 비침습적 장치로, 손가락 끝에 부착되는 센서를 통해 작동합니다.
-                    센서는 자외선과 적외선을 이용하여 혈액을 통과시키며, 이 과정에서 혈액 속의 헤모글로빈이 산소와 결합된 정도에 따라 빛을 다르게 흡수합니다.
-                    헤모글로빈이 산소와 결합된 경우와 결합된 정도에 따라 빛을 다르게 흡수합니다. 
-                    헤모글로빈이 산소와 결합된 경우와 결합되지 않은 경우의 흡수량이 다르기 때문에, 이를 측정함으로써 혈액 내의 산소 포화도를 파악할 수 있으며, 
-                    혈액이 산소를 운반하는 속도와 관련이 있는 맥박수 역시 전자회로를 통해 처리되어 디스플레이에 산소 포화도와 맥박수로 표시됩니다.
-                </p>
-                <div class="more-text" style="display: none;">
-                    <div class="feature-box"><h4>산소포화도측정기의 주요 기능</h4></div>
-                    <div class="feature-box">- SpO2 및 PR 실시간 측정</div>
-                    <div class="feature-box">- 관류지수(PI) 수치 및 맥박 파형 표시</div>
-                    <div class="feature-box">- 음향 알림 기능</div>
-                    <div class="feature-box">- 맥박수 측정 범위: 30bpm ~ 250bpm</div>
-                    <div class="feature-box">- 저전력 소비 및 자동 대기 모드</div>
-                    <div class="feature-box">- 화면 방향 자동 전환 기능</div>
-                    <div class="feature-box">※ 본 제품은 의료기기 인증을 받았으며 정기적 품질검수를 시행하고 있습니다.</div>
-                </div>
-                <button class="toggle-btn">
-                  <img src="img/down.png" alt="더보기 버튼" class="toggle-icon">
-                </button>
-            </div>
-            <a href="https://shopping.naver.com" class="purchase-btn" target="_blank">구매하러가기</a>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-     <!-- 푸터 시작 -->
+    <!-- 푸터 시작 -->
         <footer>
             <div class="flogo">
                 <a href="./"><img src="img/flogo.png" alt="반도메딕스 로고"></a>
@@ -207,55 +158,63 @@
     </div>
     <!-- 모달창 끝 -->
 
-    <!-- 슬라이드 이미지, 인디케이터 통합하는 스크립트 -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll('#jbox1 .slider-wrapper img');
-    const indicators = document.querySelectorAll('#jbox1 .indicator-container .indicator');
-    let currentIndex = 0;
 
-    function updateSlide() {
-        slides.forEach((img, idx) => {
-        img.classList.toggle('active', idx === currentIndex);
-        });
-        indicators.forEach((indicator, idx) => {
-        indicator.classList.toggle('active', idx === currentIndex);
-        });
+    <!-- 제품 목록 페이지 스크립트 -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const pageSize = 8;
+    const pagesToShow = 4;
+    let currentPage = 1;
+    let groupStart = 1;
+
+    const products = document.querySelectorAll(".cbox01 a");
+    const nav = document.querySelector(".pagination");
+
+    function calculateTotalPages() {
+        return Math.ceil(products.length / pageSize) || 1;
     }
 
-    document.querySelector('#jbox1 .prev-btn').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlide();
-    });
+    function showProducts(page) {
+        currentPage = page;
+        const totalPages = calculateTotalPages();
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (groupStart > totalPages) groupStart = Math.max(1, totalPages - pagesToShow + 1);
 
-    document.querySelector('#jbox1 .next-btn').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlide();
-    });
-
-    indicators.forEach((indicator, idx) => {
-        indicator.addEventListener('click', () => {
-        currentIndex = idx;
-        updateSlide();
+        products.forEach((p, idx) => {
+        p.style.display = idx >= (currentPage - 1) * pageSize && idx < currentPage * pageSize ? "inline-block" : "none";
         });
-    });
 
-    updateSlide(); // 초기 상태 호출
-    });
-    </script>
-    
-    <!-- 제품 상세내용 더보기 스크립트 -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector('.toggle-btn');
-    const summary = document.querySelector('.summary');
-    const moreText = document.querySelector('.more-text');
+        renderPagination();
+    }
 
-    toggleButton.addEventListener('click', function () {
-        const isExpanded = summary.classList.toggle('expanded');
-        moreText.style.display = isExpanded ? 'block' : 'none';
-        toggleButton.classList.toggle('rotated', isExpanded);
-    });
+    function renderPagination() {
+        const totalPages = calculateTotalPages();
+        nav.innerHTML = "";
+        if (groupStart > 1) {
+        const prev = document.createElement('button');
+        prev.textContent = '◀';
+        prev.onclick = () => { groupStart = Math.max(1, groupStart - pagesToShow); showProducts(groupStart); };
+        nav.appendChild(prev);
+        }
+
+        const end = Math.min(groupStart + pagesToShow - 1, totalPages);
+        for (let i = groupStart; i <= end; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i;
+        if (i === currentPage) btn.classList.add('active');
+        btn.onclick = () => showProducts(i);
+        nav.appendChild(btn);
+        }
+
+        if (end < totalPages) {
+        const next = document.createElement('button');
+        next.textContent = '▶';
+        next.onclick = () => { groupStart += pagesToShow; showProducts(groupStart); };
+        nav.appendChild(next);
+        }
+    }
+
+    showProducts(1); // 초기 호출
     });
     </script>
 
@@ -311,3 +270,6 @@
     </script>
 </body>
 </html>
+
+
+
