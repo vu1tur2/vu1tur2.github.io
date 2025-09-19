@@ -81,8 +81,8 @@ nav {
 }
 
 .menu > li:hover > a {
-  border-bottom: 3px solid aquamarine; 
-  color: aquamarine;
+  border-bottom: 3px solid #0a5c9f; 
+  color: #0a5c9f;
 }
 
 .submenu {
@@ -116,7 +116,8 @@ nav {
 }
 
 .submenu li a:hover {
-  color: aquamarine;
+  background-color: #f0f4ff;
+  color: #0a5c9f;
   font-weight: bold;
 }
 
@@ -130,14 +131,14 @@ nav {
 
 .menu > li > a.active,
 .menu > li:hover > a {
-  border-bottom: 3px solid aquamarine;
-  color: aquamarine;
+  border-bottom: 3px solid #0a5c9f;
+  color: #0a5c9f;
 }
 
 #slide {
   width: 100%;
   height: 865px;
-  background-color: antiquewhite;
+  background-color: #fff;
   position: relative;
   opacity: 0.8;
 }
@@ -151,15 +152,16 @@ nav {
 
 
 footer {
-  width: 1200px;
-  height: 300px;
+  width: 100%;
+  height: 150px;
   margin: 0 auto;
-  padding: 50px 0;
+  display: flex;
+  background-color: #222;
 }
 
 .flogo {
-  width: 100%;
-  height: 100px;
+  width: 50%;
+  height: 150px;
 }
 .flogo > a {
   width: 200px;
@@ -168,16 +170,17 @@ footer {
 
 .flogo img {
   width: 200px;
-  height: 100px;
+  height: 150px;
   object-fit: cover;
 }
 
 .copy {
-  width: 100%;
+  width: 50%;
   text-align: center;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   line-height: 1.6;
+  padding-top: 15px;
 }
 
 .copy .n {
@@ -193,6 +196,9 @@ footer {
   background: none;
   border: none;
   padding: 0;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  height: 30px;
 }
 
 .openModalBtn:hover {
@@ -202,12 +208,8 @@ footer {
 
 .copy .copyright {
   font-size: 12.5px;
-  color: #555;
+  color: #fff;
 }
-
-
-
-
 
 body.modal-open {
   overflow: hidden;
@@ -426,16 +428,11 @@ select {
   box-sizing: border-box;
 }
 
-.map iframe {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
 
 .map1 {
   margin-top: 20px;
   display: grid;
-  gap: 10px;
+  text-align: center;
 }
 
 .map-1 {
@@ -445,13 +442,16 @@ select {
 
 .map-label {
   width: 120px;
+  height: 40px;
   font-weight: bold;
   color: #333;
+  padding-top: 8px;
 }
 
 .map-content {
   flex: 1;
   color: #555;
+  padding-top: 8px;
 }
 
 
@@ -848,7 +848,7 @@ select {
   background: #f0f0f0;
   border: 1px solid #ccc;
   color: #333;
-  padding: 4px 8px;           /* 버튼 크기를 줄임 */
+  padding: 4px 8px;           
   margin: 0 2px;
   font-size: 14px;
   border-radius: 50%;      
@@ -867,3 +867,94 @@ select {
   color: white;
   font-weight: bold;
 }
+
+
+
+
+
+/* about.html css */
+/* 헤더 전체 */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  background-color: #0a5c9f; /* 파란색 배경 */
+  color: #fff;
+  position: sticky;  /* 스크롤 내려도 상단에 고정 */
+  top: 0;
+  z-index: 1000;
+}
+
+/* 로고 */
+#logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#logo {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* 스크롤 후 보임 */
+#header.scrolled #logo {
+  opacity: 1;
+  visibility: visible;
+}
+/* 메뉴 */
+.navbar #menu {
+  display: flex;
+  gap: 40px; /* 메뉴 간격 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  position: relative;  /* 기준점이 됨 */
+}
+
+.navbar #menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar #menu li a:hover {
+  color: rgba(255,255,255,0.8); /* hover 시 노란색 */
+}
+
+.navbar #submenu {
+  display: none;         /* 처음엔 숨김 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.navbar #submenu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.navbar #submenu li a:hover {
+  background: #f0f4ff;
+  color: #0a5c9f;
+}
+
