@@ -928,6 +928,7 @@ body.modal-open {overflow: hidden;}
 
 #map {
   width: 100%;
+  min-width: 960px;
   height: 450px;
 }
 
@@ -1477,3 +1478,4 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
+
