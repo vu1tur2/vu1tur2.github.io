@@ -26,70 +26,144 @@
     <!-- css 연결 코드 -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slide.js"></script>
     <script src="js/script.js"></script>
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 </head>
 <body>
-    <!-- 헤더 시작 -->
+    <div id="wrapper">
         <header>
-            
-            <div class="logo-wrapper">
-                <img class="logo" src="img/flogo.png" alt="반도메딕스 로고" />
+            <div class="logo">
+                <a href="./"><img src="img/logo.png" alt="로고 이미지"></a>
             </div>
-
-            <div class="header-mid"></div>
-
-            <nav>
-             <ul class="menu">
-                 <li>
-                     <a href="./" class="active">홈</a>
-                 </li>
-                 <li>
-                     <a href="about.html">회사소개</a>
-                     <ul class="submenu">
-                         <li><a href="about.html">회사소개</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="#">제품소개</a>
-                     <ul class="submenu">
-                        <li><a href="01_products.html">Fetal Doppler</a></li>
-                        <li><a href="02_products.html">Nebulizer</a></li>
-                        <li><a href="03_products.html">Pulse Oximeter</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="b2b.html">B2B</a>
-                 </li>
-             </ul>
-         </nav>
         </header>
-
-        <div id="slide">
-            <img src="img/slide01.jpg" alt="컨텐츠 이미지">
-        </div>
-
-     <!-- 푸터 시작 -->
-        <footer>
-            <div class="flogo">
-                <a href="./"><img src="img/flogo.png" alt="반도메딕스 로고"></a>
-            </div>
-        <div class="copy">
-        <p>
-            상호명: 반도메딕스 사업자등록번호: 139-86-02746 <span class="n">대표번호: 062-233-6015</span>  <br>
-            이메일: taehyunhealthcare@naver.com 본사 주소: 광주광역시 동구 천변우로 453 (코밀빌딩) 5층 508호 <br>
-            평일: 09:00 ~ 17:00 / 점심시간: 12:00 ~ 13:00 / 휴무일: 주말 및 공휴일
-        </p>
+    
+        <div id="main-wrap">
+            <nav>
+                <div class="menu">
+                    <li><a href="./">홈</a></li>
+                    <li>
+                        <a href="about.html">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="01_products.html">제품</a>
+                        <div class="mega-menu-wrapper">
+                        <ul class="submenu">
+                            <li>
+                                <a href="products_subpage_1.html">소화기</a>
+                                <ul class="drop">
+                                    <li><a href="subpage-1-1.html">전자내시경시스템</a></li>
+                                    <li><a href="subpage-1-2.html">위내시경</a></li>
+                                    <li><a href="subpage-1-3.html">대장내시경</a></li>
+                                    <li><a href="subpage-1-4.html">ERCP</a></li>
+                                    <li><a href="subpage-1-5.html">EUS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="products_subpage_2.html">기관지</a>
+                                <ul class="drop">
+                                    <li><a href="subpage-2-1.html">전자내시경시스템</a></li>
+                                    <li><a href="subpage-2-2.html">기관지내시경</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="b2b.html">B2B</a>
+                    </li>
+                </div>
+            </nav>
         
-        <p class="copyright">
-            &copy; 2025 반도메딕스. ALL rights reserved.
-        </p>
-
-        <p class="policy">
-            <button id="openModalBtn" type="button" class="openModalBtn">개인정보처리방침</button>
-        </p>
+            <div id="slide">
+                <img src="" alt="이미지 슬라이드">
+                <img src="" alt="이미지 슬라이드">
+                <img src="" alt="이미지 슬라이드">
+        
+                <div class="main-slide-indicators">
+                    <span class="main-dot active"></span>
+                    <span class="main-dot"></span>
+                    <span class="main-dot"></span>
+                </div>
+            </div>
+        
+            <div id="contents">
+                <div class="cbox1">
+                    <h4>주요 제품</h4>
+                    
+                    <div class="product-slider-wrapper">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="" alt="제품 이미지 1">
+                            </div>
+                            <div class="product-info">
+                                <h4>제품명1</h4>
+                                <p>간단한 제품 설명</p>
+                                <a href="#">제품 상세 보기 1</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="" alt="제품 이미지 2">
+                            </div>
+                            <div class="product-info">
+                                <h4>제품명2</h4>
+                                <p>간단한 제품 설명</p>
+                                <a href="#">제품 상세 보기 2</a>
+                            </div>
+                        </div>
+        
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="" alt="제품 이미지 3">
+                            </div>
+                            <div class="product-info">
+                                <h4>제품명</h4>
+                                <p>간단한 제품 설명</p>
+                                <a href="#">제품 상세 보기 3</a>
+                            </div>
+                        </div>
+        
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img src="" alt="제품 이미지 4">
+                            </div>
+                            <div class="product-info">
+                                <h4>제품명</h4>
+                                <p>간단한 제품 설명</p>
+                                <a href="#">제품 상세 보기 4</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   <div class="product-slider-indicators">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="cbox2">
+                    <div class="small-box1">
+                        <img src="" alt="회사소개 이미지">
+                    </div>
+                    <div class="small-box2">
+                        <img src="" alt="B2B 문의 이미지">
+                    </div>
+                </div>
+            </div>
         </div>
+    
+        <footer>
+            <div class="copy">
+                반도메딕스(주) 본사 : 광주광역시 동구 천변우로 453, 코밀빌딩 508호 Tel : 062-2333-6015 <br>
+                사업자등록번호 : 123-1414-124 E-mail : bandomedics@naver.com  <button id="openModalBtn" type="button" class="openModalBtn">개인정보처리방침</button><br>
+                &copy; 2025 (주)반도메딕스, ALL RIGHTS RESERVED.
+            </div>
         </footer>
-    <!-- 푸터 끝 -->
+    </div>
 
     <!-- 모달창 시작 -->
     <div id="privacyModal" class="modal">
@@ -103,9 +177,8 @@
 
             1. 수집하는 개인정보 항목 <br>
             회사는 아래와 같은 항목을 수집할 수 있습니다. <br>
-            - 문의하기 및 B2B 제휴문의 시: 이름, 이메일, 문의 내용 <br>
+            - B2B 제휴문의 시: 이름, 이메일, 문의 내용 <br>
             - 서비스 이용과정에서 자동으로 생성되는 정보: 접속 IP, 쿠키, 방문 기록, 브라우저 정보 등 <br><br>
-
 
             2. 개인정보의 수집 및 이용 목적 <br>
             회사는 수집한 개인정보를 다음의 목적을 위해 사용합니다. <br>
@@ -143,13 +216,12 @@
             9. 개인정보처리방침의 변경 <br>
             이 개인정보처리방침은 법령 또는 회사 정책에 따라 변경될 수 있으며, 변경 시 홈페이지를 통해 공지합니다. <br><br>
 
-            - 시행일자: 2025년 8월 19일 - 
+            - 시행일자: 2025년 11월 19일 - 
         </p>
         </div>
     </div>
     </div>
     <!-- 모달창 끝 -->
-
 
 
     <!-- 관리자 로그인 로그아웃 스크립트 -->
@@ -173,7 +245,6 @@
     });
     </script>
 
-
     <!-- 모달 스크립트 -->
     <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -181,21 +252,18 @@
     const openBtn = document.getElementById("openModalBtn");
     const closeBtn = document.querySelector(".close");
 
-    // 모달 열기
     openBtn.onclick = function (e) {
         e.preventDefault();
         modal.style.display = "block";
-        modal.scrollTop = 0; //  모달 자체 스크롤 초기화
+        modal.scrollTop = 0;
         document.body.classList.add("modal-open");
     };
 
-    // 모달 닫기
     closeBtn.onclick = function () {
         modal.style.display = "none";
         document.body.classList.remove("modal-open");
     };
 
-    // 바깥 클릭 시 모달 닫기
     window.onclick = function (event) {
         if (event.target === modal) {
         modal.style.display = "none";
@@ -207,22 +275,18 @@
     document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('privacyModal');
 
-    // 마우스 드래그 방지
     modal.addEventListener('dragstart', function (e) {
         e.preventDefault();
     });
 
-    // 텍스트 복사 방지
     modal.addEventListener('copy', function (e) {
         e.preventDefault();
     });
 
-    // 오른쪽 클릭 방지
     modal.addEventListener('contextmenu', function (e) {
         e.preventDefault();
     });
     });
     </script>
-
 </body>
 </html>
