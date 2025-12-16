@@ -938,7 +938,6 @@ body.modal-open {overflow: hidden;}
   max-width: 960px;
   text-align: center;
   color: #555;
-  margin-top: 10px;
 }
 
 .map-label {
@@ -1479,5 +1478,6 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
+
 
 
