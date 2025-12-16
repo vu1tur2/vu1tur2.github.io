@@ -12,112 +12,115 @@
     <script src="js/script.js"></script>
     <script src="js/form-validation.js"></script>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-        <!-- 헤더 시작 -->
-        <header>
-            
-            <div class="logo-wrapper">
-                <img class="logo" src="img/flogo.png" alt="반도메딕스 로고" />
-            </div>
-
-            <div class="header-mid"></div>
-
-            <nav>
-             <ul class="menu">
-                 <li>
-                     <a href="./">홈</a>
-                 </li>
-                 <li>
-                     <a href="about.html">회사소개</a>
-                     <ul class="submenu">
-                         <li><a href="about.html">회사소개</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="#">제품소개</a>
-                     <ul class="submenu">
-                         <li><a href="01_products.html">Fetal Doppler</a></li>
-                         <li><a href="02_products.html">Nebulizer</a></li>
-                         <li><a href="03_products.html">Pulse Oximeter</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="b2b.html" class="active">B2B</a>
-                 </li>
-             </ul>
-         </nav>
-        </header>
-
-    <!-- B2B 문의 폼 -->
-    <div class="partner-form-container">
-      <div class="inquiry-header">
-        <h2>B2B 문의</h2>
-        <p>당신의 소중한 제휴문의에 성실히 응답드리기 위해 아래 양식을 작성해주세요. <br>
-          <span>* 표시되어 있는 란은 필수 입력란입니다.</span>
-        </p>
-      </div>
-
-      <!-- action, method 제거하고 id만 지정 -->
-      <form id="partner-form" class="partner-form">
-        <fieldset>
-          <div class="section-divider"></div>
-          <div class="form-label-box"><p>사업자정보</p></div>
-          <div class="form-divider"></div>
-
-          <div class="form-row">
-            <label for="company">* 상호명</label>
-            <input type="text" id="company" name="company" autocomplete="organization" required>
-          </div>
-
-          <div class="form-row">
-            <label for="name">* 대표자명</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-          </div>
-
-          <div class="form-row">
-            <label for="phone">* 연락처</label>
-            <input type="text" id="phone" name="phone" autocomplete="tel" required>
-          </div>
-
-          <div class="form-row vertical">
-            <label for="message">*문의 내용</label>
-            <div class="textarea-wrapper">
-              <textarea id="message" name="message" autocomplete="on" required></textarea>
-            </div>
-          </div>
-          <div class="submit-wrap">
-            <button type="submit">문의하기</button>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-    <!-- 파트너 문의 끝 -->
-
-
-     <!-- 푸터 시작 -->
-        <footer>
-            <div class="flogo">
-                <a href="./"><img src="img/flogo.png" alt="반도메딕스 로고"></a>
-            </div>
-        <div class="copy">
-        <p>
-            상호명: 반도메딕스 사업자등록번호: 139-86-02746 <span class="n">대표번호: 062-233-6015</span>  <br>
-            이메일: taehyunhealthcare@naver.com 본사 주소: 광주광역시 동구 천변우로 453 (코밀빌딩) 5층 508호 <br>
-            평일: 09:00 ~ 17:00 / 점심시간: 12:00 ~ 13:00 / 휴무일: 주말 및 공휴일
-        </p>
-
-        <p class="copyright">
-            &copy; 2025 반도메딕스. ALL rights reserved.
-        </p>
-
-        <p class="policy">
-            <button id="openModalBtn" type="button" class="openModalBtn">개인정보처리방침</button>
-        </p>
+  <div id="wrapper">
+    <header>
+        <div class="logo">
+            <a href="./"><img src="img/logo.png" alt="로고 이미지"></a>
         </div>
-        </footer>
-    <!-- 푸터 끝 -->
+    </header>
+    <div id="main-wrap">
+            <nav>
+                <div class="menu">
+                    <li><a href="./">홈</a></li>
+                    <li>
+                        <a href="about.html">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="01_products.html">제품</a>
+                        <div class="mega-menu-wrapper">
+                        <ul class="submenu">
+                            <li>
+                                <a href="products_subpage_1.html">소화기</a>
+                                <ul class="drop">
+                                    <li><a href="subpage-1-1.html">전자내시경시스템</a></li>
+                                    <li><a href="subpage-1-2.html">위내시경</a></li>
+                                    <li><a href="subpage-1-3.html">대장내시경</a></li>
+                                    <li><a href="subpage-1-4.html">ERCP</a></li>
+                                    <li><a href="subpage-1-5.html">EUS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="products_subpage_2.html">기관지</a>
+                                <ul class="drop">
+                                    <li><a href="subpage-2-1.html">전자내시경시스템</a></li>
+                                    <li><a href="subpage-2-2.html">기관지내시경</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="b2b.html">B2B</a>
+                    </li>
+                </div>
+            </nav>
+  
+      <!-- B2B 문의 폼 -->
+      <div class="partner-form-container">
+        <div class="inquiry-header">
+          <h2>B2B 문의</h2>
+          <p>
+            <span>* 표시되어 있는 란은 필수 입력란입니다.</span>
+          </p>
+        </div>
+  
+        <!-- action, method 제거하고 id만 지정 -->
+        <form id="partner-form" class="partner-form">
+          <fieldset>
+            <div class="section-divider"></div>
+            <div class="form-label-box"><p>사업자정보</p></div>
+            <div class="form-divider"></div>
+  
+            <div class="form-row">
+              <label for="company">회사명/기관명 <span class="required-star">*</span></label>
+              <input type="text" id="company" name="company" autocomplete="organization" required>
+            </div>
+  
+            <div class="form-row">
+              <label for="name">담당자 이름 <span class="required-star">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+  
+            <div class="form-row">
+              <label for="phone">연락처 <span class="required-star">*</span></label>
+              <input type="text" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+  
+            <div class="form-row vertical">
+              <label for="message">문의 내용 <span class="required-star">*</span></label>
+              <div class="textarea-wrapper">
+                <textarea id="message" name="message" autocomplete="on" required></textarea>
+              </div>
+            </div>
+  
+            <div class="privacy-consent-wrap">
+                <label for="privacy-agree" class="consent-label">
+                    개인정보 수집 및 이용에 동의합니다.
+                    <a href="#" class="view-policy-link" onclick="openPrivacyModal(event);" target="_blank">(내용보기)</a>
+                </label>
+                <input type="checkbox" id="privacy-agree" name="privacy-agree" required class="consent-checkbox">
+            </div>
+  
+            <div class="submit-wrap">
+              <button type="submit">문의하기</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!-- 파트너 문의 끝 -->
+    </div>
+
+    <footer>
+        <div class="copy">
+            반도메딕스(주) 본사 : 광주광역시 동구 천변우로 453, 코밀빌딩 508호 Tel : 062-2333-6015 <br>
+            사업자등록번호 : 123-1414-124 E-mail : bandomedics@naver.com  <button id="openModalBtn" type="button" class="openModalBtn">개인정보처리방침</button><br>
+            &copy; 2025 (주)반도메딕스, ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+  </div>
 
     <!-- 모달창 시작 -->
     <div id="privacyModal" class="modal">
@@ -131,9 +134,8 @@
 
             1. 수집하는 개인정보 항목 <br>
             회사는 아래와 같은 항목을 수집할 수 있습니다. <br>
-            - 문의하기 및 B2B 제휴문의 시: 이름, 이메일, 문의 내용 <br>
+            - B2B 제휴문의 시: 이름, 이메일, 문의 내용 <br>
             - 서비스 이용과정에서 자동으로 생성되는 정보: 접속 IP, 쿠키, 방문 기록, 브라우저 정보 등 <br><br>
-
 
             2. 개인정보의 수집 및 이용 목적 <br>
             회사는 수집한 개인정보를 다음의 목적을 위해 사용합니다. <br>
@@ -171,7 +173,7 @@
             9. 개인정보처리방침의 변경 <br>
             이 개인정보처리방침은 법령 또는 회사 정책에 따라 변경될 수 있으며, 변경 시 홈페이지를 통해 공지합니다. <br><br>
 
-            - 시행일자: 2025년 8월 19일 - 
+            - 시행일자: 2025년 11월 19일 - 
         </p>
         </div>
     </div>
@@ -179,10 +181,9 @@
     <!-- 모달창 끝 -->
 
 
-
     <!-- 이메일 전송 스크립트 -->
     <script>
-      emailjs.init('uQovuRqpho-BUgMSv'); // 발급받은 Public Key 사이트에서 배정받은 퍼블릭 키
+      emailjs.init('uQovuRqpho-BUgMSv');
 
       document.getElementById('partner-form').addEventListener('submit', function(e) {
         e.preventDefault();
@@ -190,13 +191,11 @@
 
         emailjs.sendForm('service_9297im7', 'template_zoueue7', form)
           .then(() => {
-            // 전송 성공시 → 별도 안내 없이 바로 이동
             window.location.href = '01_partnership.html';
           })
           .catch((error) => {
-            // 전송 실패시 → 오류 메시지 알람
             alert('전송 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
-            console.error('EmailJS Error:', error); // 디버깅용 로그
+            console.error('EmailJS Error:', error);
           });
       });
     </script>
@@ -209,21 +208,18 @@
     const openBtn = document.getElementById("openModalBtn");
     const closeBtn = document.querySelector(".close");
 
-    // 모달 열기
     openBtn.onclick = function (e) {
         e.preventDefault();
         modal.style.display = "block";
-        modal.scrollTop = 0; //  모달 자체 스크롤 초기화
+        modal.scrollTop = 0;
         document.body.classList.add("modal-open");
     };
 
-    // 모달 닫기
     closeBtn.onclick = function () {
         modal.style.display = "none";
         document.body.classList.remove("modal-open");
     };
 
-    // 바깥 클릭 시 모달 닫기
     window.onclick = function (event) {
         if (event.target === modal) {
         modal.style.display = "none";
@@ -235,21 +231,27 @@
     document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('privacyModal');
 
-    // 마우스 드래그 방지
     modal.addEventListener('dragstart', function (e) {
         e.preventDefault();
     });
 
-    // 텍스트 복사 방지
     modal.addEventListener('copy', function (e) {
         e.preventDefault();
     });
 
-    // 오른쪽 클릭 방지
     modal.addEventListener('contextmenu', function (e) {
         e.preventDefault();
+
+        });
     });
-    });
+
+    function openPrivacyModal(e) {
+        e.preventDefault();
+        const modal = document.getElementById("privacyModal");
+        modal.style.display = "block";
+        modal.scrollTop = 0;
+        document.body.classList.add("modal-open");
+    }
     </script>
 </body>
 </html>
