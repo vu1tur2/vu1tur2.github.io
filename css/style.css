@@ -304,7 +304,7 @@ nav {
   opacity: 0;
   border-radius: 6px;
   gap: 80px;
-  margin-top: 10PX;
+  margin-top: 10px;
 }
 
 .product-item:first-of-type {opacity: 1;}
@@ -358,6 +358,11 @@ nav {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+}
+
+.product-info a:hover {
+  background-color: #4f59ca;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-slider-indicators {
