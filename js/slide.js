@@ -3,7 +3,7 @@ $(document).ready(function() {
     const $slideContainer = $('#slide');
     const $slides = $slideContainer.find('img');
     const slideCount = $slides.length;
-    const animationDuration = 3000; 
+    const animationDuration = 1000; 
     const intervalTime = 4000;
 
     const $dots = $('.main-slide-indicators').find('.main-dot');
@@ -23,7 +23,7 @@ $(document).ready(function() {
             'transform': 'translate(-50%, -50%)',
             'width': '100%',
             'max-width' : '1200px',
-            'height': '500px',
+            'height': '300px',
             'z-index': 1 
         });
 
@@ -43,7 +43,6 @@ $(document).ready(function() {
     }
 
     function showSlide(nextIndex) {
-
         if (nextIndex < 0 || nextIndex >= slideCount || isAnimating) {
             return;
         }
@@ -54,19 +53,10 @@ $(document).ready(function() {
         }
 
         isAnimating = true;
-
         $dots.removeClass('active');
         $dots.eq(nextIndex).addClass('active');
-
-        $slides.eq(nextIndex).css({
-            'z-index': 2
-        }).animate({ opacity: 1 }, animationDuration, function() {
-
-            $slides.eq(currentSlide).css({
-                'opacity': 0,
-                'z-index': 1
-            });
-
+        $slides.eq(currentSlide).animate({ opacity: 0 }, animationDuration).css('z-index', 1);
+        $slides.eq(nextIndex).css('z-index', 2).animate({ opacity: 1 }, animationDuration, function() {
             currentSlide = nextIndex;
             isAnimating = false;
         });
