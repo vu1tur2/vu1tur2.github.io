@@ -897,11 +897,11 @@ body.modal-open {overflow: hidden;}
 }
 
 .about-section p {font-size: 13px;}
-.about-section li {font-size: 13px;}
+.about-section li {font-size: 12.5px;}
 
 .highlight {
   background: #eef6fc;
-  padding: 20px 0 20px 30px;
+  padding: 20px 0 20px 20px;
   border-radius: 8px;
   margin-top: 20px;
 }
