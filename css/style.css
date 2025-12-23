@@ -916,7 +916,7 @@ body.modal-open {overflow: hidden;}
 #map {
   width: 100%;
   min-width: 1200px;
-  height: 450px;
+  height: 550px;
 }
 
 .map-1 {
@@ -1490,3 +1490,4 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
+
