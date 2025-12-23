@@ -930,15 +930,15 @@ body.modal-open {overflow: hidden;}
 .map-label {
   width: 120px;
   height: 40px;
-  padding: 8px 0 0;
-  font-size: 16px;
+  padding: 10px 0 0;
+  font-size: 13px;
 }
 
 .map-content {
   width: 838px;
   height: 40px;
-  padding: 8px 0 0;
-  font-size: 16px;
+  padding: 10px 0 0;
+  font-size: 13px;
 }
 
 /* products.html */
