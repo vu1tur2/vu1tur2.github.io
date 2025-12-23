@@ -910,7 +910,6 @@ body.modal-open {overflow: hidden;}
   width: 100%;
   max-width: 1200px;
   height: 756px;
-  padding: 40px 0;
 }
 
 #map {
@@ -1490,4 +1489,5 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
+
 
