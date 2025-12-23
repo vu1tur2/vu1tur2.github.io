@@ -896,7 +896,7 @@ body.modal-open {overflow: hidden;}
   border-radius: 2px;
 }
 
-.about-section p {font-size: 13px;}
+.about-section p {font-size: 12.5px;}
 .about-section li {font-size: 12.5px;}
 
 .highlight {
@@ -1490,3 +1490,4 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
+
