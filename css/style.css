@@ -281,7 +281,7 @@ nav {
 
 .cbox1 h4 {
   margin-top: 0;
-  padding: 10px 35px 0;
+  padding: 10px 38px 0;
   font-size: 20px;
   color: #333;
 }
@@ -289,7 +289,7 @@ nav {
 .product-slider-wrapper {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 200px;
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -862,22 +862,22 @@ body.modal-open {overflow: hidden;}
 
 .hero h1 {
   margin: 0;
-  font-size: 2.2em;
+  font-size: 35px;
 }
 
 .hero p {
   margin-top: 10px;
-  font-size: 1.1em;
+  font-size: 17px;
 }
 
 .about-section {
-  padding: 60px 20px;
-  max-width: 1000px;
+  padding: 60px 0;
+  max-width: 1200px;
   margin: auto;
 }
 
 .about-section h2 {
-  font-size: 1.8em;
+  font-size: 28px;
   margin-bottom: 20px;
   position: relative;
   padding-left: 15px;
@@ -896,6 +896,9 @@ body.modal-open {overflow: hidden;}
   border-radius: 2px;
 }
 
+.about-section p {font-size: 16px;}
+.about-section li {font-size: 16px;}
+
 .highlight {
   background: #eef6fc;
   padding: 20px;
@@ -905,34 +908,34 @@ body.modal-open {overflow: hidden;}
 
 .map {
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   height: 756px;
   padding: 40px 0;
 }
 
 #map {
   width: 100%;
-  min-width: 960px;
+  min-width: 1200px;
   height: 450px;
 }
 
 .map-1 {
   display: flex;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   text-align: center;
   color: #555;
 }
 
 .map-label {
-  width: 120px;
+  width: 250px;
   height: 40px;
   padding: 8px 0 0;
   font-size: 16px;
 }
 
 .map-content {
-  width: 838px;
+  width: 950px;
   height: 40px;
   padding: 8px 0 0;
   font-size: 16px;
