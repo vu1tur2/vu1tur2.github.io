@@ -862,22 +862,22 @@ body.modal-open {overflow: hidden;}
 
 .hero h1 {
   margin: 0;
-  font-size: 35px;
+  font-size: 2.2em;
 }
 
 .hero p {
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 1.1em;
 }
 
 .about-section {
-  padding: 60px 0;
-  max-width: 1200px;
+  padding: 60px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .about-section h2 {
-  font-size: 28px;
+  font-size: 1.8em;
   margin-bottom: 20px;
   position: relative;
   padding-left: 15px;
@@ -896,45 +896,46 @@ body.modal-open {overflow: hidden;}
   border-radius: 2px;
 }
 
-.about-section p {font-size: 16px;}
-.about-section li {font-size: 16px;}
+.about-section p {font-size: 13px;}
+.about-section li {font-size: 13px;}
 
 .highlight {
   background: #eef6fc;
-  padding: 20px;
+  padding: 20px 0 20px 30px;
   border-radius: 8px;
   margin-top: 20px;
 }
 
 .map {
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   height: 756px;
+  padding: 40px 0;
 }
 
 #map {
   width: 100%;
-  min-width: 1200px;
-  height: 550px;
+  min-width: 960px;
+  height: 450px;
 }
 
 .map-1 {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   text-align: center;
   color: #555;
 }
 
 .map-label {
-  width: 250px;
+  width: 120px;
   height: 40px;
   padding: 8px 0 0;
   font-size: 16px;
 }
 
 .map-content {
-  width: 950px;
+  width: 838px;
   height: 40px;
   padding: 8px 0 0;
   font-size: 16px;
@@ -1489,5 +1490,3 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
-
-
