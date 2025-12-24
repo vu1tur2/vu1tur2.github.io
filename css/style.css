@@ -90,7 +90,7 @@ nav {
 }
 
 .menu > li {
-  width: 240px;
+  width: 192px;
   height: 60px;
   flex-shrink: 0;
   position: relative;
@@ -138,7 +138,7 @@ nav {
   top: 100%;
   left: 0;
   padding-top: 20px;
-  width: 240px;
+  width: 192px;
   height: 20px;
   background-color: #1f2563;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -154,7 +154,7 @@ nav {
   padding: 0;
   margin: 0;
   list-style: none;
-  min-width: 240px;
+  min-width: 192px;
   z-index: 1000;
 }
 
@@ -196,7 +196,7 @@ nav {
   position: absolute;
   top: 0;
   left: 100%;
-  min-width: 200px;
+  min-width: 192px;
   background-color: #6d77d1;
   padding: 0;
   margin: 0;
@@ -908,7 +908,7 @@ body.modal-open {overflow: hidden;}
 
 .map {
   width: 100%;
-  max-width: 960px;
+  max-width: 960px !important;
   height: 756px;
 }
 
@@ -1490,6 +1490,3 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
-
-
-
