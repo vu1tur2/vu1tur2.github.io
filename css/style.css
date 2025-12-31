@@ -1463,7 +1463,6 @@ td:nth-child(3) {width: 40%;}
 /* 주요특징 * 용 CSS */
 .features-box-text {font-size: 11px;}
 
-
 /* GIF/CF 주요특징 CSS */
 .box-box {width: 100%;}
 
@@ -1490,3 +1489,112 @@ td img {
   width: 300px;
   margin-left: 20px;
 }
+
+/* archive.html css */
+
+.archive-wrap {
+  width: 100%;
+  padding: 40px 0 80px 0;
+}
+
+.archive-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.archive-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  table-layout: fixed;
+}
+
+.archive-table thead {background-color: #f2f2f2;}
+
+.archive-table thead th {
+  padding: 18px 10px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.archive-table tbody td {
+  padding: 18px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.archive-table th,
+.archive-table td {
+  border-left: none;
+  border-right: none;
+}
+
+.archive-table tbody tr:hover {background-color: #fafafa;}
+.archive-table td.title {padding-left: 30px;}
+
+.archive-table td.title a {
+  color: #333;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.archive-table td.title a:hover {text-decoration: underline;}
+.col-num {width: 10%;}
+.col-title {width: 55%;}
+.col-date {width: 20%;}
+.col-writer {width: 15%;}
+
+/* archive-subpage.html css */
+.archive-subpage-title {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.archive-subpage-title h2 {
+  font-weight: 300;
+  font-family: "돋움";
+}
+
+.archive-subpage-content-box {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.archive-sub-title {
+  width: 100%;
+  background-color: #1A237E;
+  color: #fff;
+  padding: 5px 10px;
+  letter-spacing: 0.06em;
+}
+
+.css-arrow-1 {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent; 
+  border-bottom: 5px solid transparent; 
+  border-left: 5px solid #1A237E;
+  vertical-align: middle;
+  margin: 4px 8px 0 0;
+}
+
+.sub-box-1 {
+  width: 100%;
+  display: flex;
+  padding: 5px 10px;
+}
+
+.sub-box-1 p {
+  color: #000;
+  font-family: "돋움";
+  font-size: 12px;
+  padding: 2px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.sub-box-1 p:hover {border-bottom: 1px solid #000;}
