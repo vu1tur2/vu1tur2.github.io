@@ -213,7 +213,7 @@ nav {
   padding: 18px 20px;
   color: #fff;
   font-size: 12px;
-  height: 47px;
+  height: 45px;
   font-family: '돋움';
 }
 
@@ -1607,3 +1607,4 @@ td img {
 }
 
 .sub-box-1 p:hover {border-bottom: 1px solid #000;}
+
