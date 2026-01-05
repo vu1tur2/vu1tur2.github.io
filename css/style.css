@@ -106,6 +106,8 @@ nav {
   text-decoration: none;
   color: #fff;
   position: relative;
+  font-family: '돋움';
+  font-weight: bold;
 }
 
 .menu > li:first-child > a::before {
@@ -175,6 +177,7 @@ nav {
   text-align: left;
   transition: background-color 0.2s;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: '돋움';
 }
 
 .submenu li:has(.drop) > a::after {
@@ -210,6 +213,8 @@ nav {
   padding: 15px 20px;
   color: #fff;
   font-size: 14px;
+  height: 47px;
+  font-family: '돋움';
 }
 
 .submenu li .drop li a:hover {
@@ -1149,11 +1154,11 @@ body.modal-open {overflow: hidden;}
 }
 
 .slide-title {
-  font-family: 'Pretendard', sans-serif;
+  font-family: '돋움';
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   color: #1a365d;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.1em;
   line-height: 1.4;
 }
 
@@ -1163,14 +1168,16 @@ body.modal-open {overflow: hidden;}
   margin-top: 10px;
   padding-left: 2px;
   letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: '돋움';
 }
 
 .slide-title-1 {
-  font-family: 'Pretendard', sans-serif;
+  font-family: '돋움';
   font-size: 32px;
   font-weight: 700;
   color: #fff;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.07em;
   line-height: 1.4;
 }
 
@@ -1179,7 +1186,9 @@ body.modal-open {overflow: hidden;}
   color: #fff;
   margin-top: 10px;
   padding-left: 2px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-family: '돋움';
 }
 
 /* subpage css */
