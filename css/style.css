@@ -1579,6 +1579,7 @@ td img {
   color: #fff;
   padding: 5px 10px;
   letter-spacing: 0.06em;
+  font-family:'돋움';
 }
 
 .css-arrow-1 {
@@ -1607,4 +1608,5 @@ td img {
 }
 
 .sub-box-1 p:hover {border-bottom: 1px solid #000;}
+
 
