@@ -107,7 +107,7 @@ nav {
   color: #fff;
   position: relative;
   font-family: '돋움';
-  font-weight: bold;
+  font-size: 14px;
 }
 
 .menu > li:first-child > a::before {
@@ -172,7 +172,7 @@ nav {
   position: relative;
   padding: 15px 20px;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   text-align: left;
   transition: background-color 0.2s;
@@ -210,9 +210,9 @@ nav {
 .submenu li:hover > .drop {display: block;}
 
 .submenu li .drop li a {
-  padding: 15px 20px;
+  padding: 18px 20px;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   height: 47px;
   font-family: '돋움';
 }
