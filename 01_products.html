@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=960, initial-scale=0.3, user-scalable=yes">
     <title>반도메딕스 - 의료기기 제품소개</title>
 
+
     <meta name="description" content="의료기기 전문 반도메딕스의 첨단 장비 솔루션입니다. 소화기·기관지 내시경 등 전문 분야별 제품 카테고리를 통해 귀하의 의료 현장에 필요한 최적의 장비를 찾아보세요.">
     <link rel="canonical" href="https://vu1tur2.github.io/01_products.html">
     <!-- css 연결 코드 -->
@@ -47,7 +48,7 @@
                                     <li><a href="subpage-2-2.html">기관지내시경</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="products_subpage_3.html">기타제품</a>
                                 <ul class="drop">
                                     <li><a href="">기타항목1</a></li>
@@ -55,7 +56,7 @@
                                     <li><a href="">기타항목3</a></li>
                                     <li><a href="">기타항목4</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                         </div>
                     </li>
@@ -125,7 +126,7 @@
                                 </div>
                             </div>
 
-                            <div class="category-card">
+                            <!-- <div class="category-card">
                                 <div class="category-header">
                                     <h3>기타제품</h3>
                                     <span>Accessories</span>
@@ -141,7 +142,7 @@
                                 <div class="category-footer">
                                     <a href="products_subpage_3.html">자세히보기</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
             </div>
@@ -217,46 +218,46 @@
 
     <!-- 모달 스크립트 -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("privacyModal");
-    const openBtn = document.getElementById("openModalBtn");
-    const closeBtn = document.querySelector(".close");
+        document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("privacyModal");
+        const openBtn = document.getElementById("openModalBtn");
+        const closeBtn = document.querySelector(".close");
 
-    openBtn.onclick = function (e) {
-        e.preventDefault();
-        modal.style.display = "block";
-        modal.scrollTop = 0;
-        document.body.classList.add("modal-open");
-    };
+        openBtn.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+            modal.scrollTop = 0;
+            document.body.classList.add("modal-open");
+        };
 
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-        document.body.classList.remove("modal-open");
-    };
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+            document.body.classList.remove("modal-open");
+        };
 
-    window.onclick = function (event) {
-        if (event.target === modal) {
-        modal.style.display = "none";
-        document.body.classList.remove("modal-open");
-        }
-    };
-    });
+        window.onclick = function (event) {
+            if (event.target === modal) {
+            modal.style.display = "none";
+            document.body.classList.remove("modal-open");
+            }
+        };
+        });
 
-    document.addEventListener('DOMContentLoaded', function () {
-    const modal = document.getElementById('privacyModal');
+        document.addEventListener('DOMContentLoaded', function () {
+        const modal = document.getElementById('privacyModal');
 
-    modal.addEventListener('dragstart', function (e) {
-        e.preventDefault();
-    });
+        modal.addEventListener('dragstart', function (e) {
+            e.preventDefault();
+        });
 
-    modal.addEventListener('copy', function (e) {
-        e.preventDefault();
-    });
+        modal.addEventListener('copy', function (e) {
+            e.preventDefault();
+        });
 
-    modal.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
-    });
+        modal.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        });
     </script>
 
     <!-- 페이지네이션 스크립트 -->
@@ -344,8 +345,6 @@
     </script>
 </body>
 </html>
-
-
 
 
 
