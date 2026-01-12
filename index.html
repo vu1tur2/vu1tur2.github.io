@@ -68,7 +68,7 @@
                                     <li><a href="subpage-2-2.html">기관지내시경</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="products_subpage_3.html">기타제품</a>
                                 <ul class="drop">
                                     <li><a href="">기타항목1</a></li>
@@ -76,7 +76,7 @@
                                     <li><a href="">기타항목3</a></li>
                                     <li><a href="">기타항목4</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                         </div>
                     </li>
@@ -247,69 +247,67 @@
 
     <!-- 관리자 로그인 로그아웃 스크립트 -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const isAdmin = localStorage.getItem("isAdmin") === "true";
-    if (isAdmin) {
-        const logoutBtn = document.createElement("button");
-        logoutBtn.textContent = "관리자 로그아웃";
-        logoutBtn.style.position = "absolute";
-        logoutBtn.style.top = "10px";
-        logoutBtn.style.right = "10px";
-        document.body.appendChild(logoutBtn);
+        document.addEventListener("DOMContentLoaded", function () {
+        const isAdmin = localStorage.getItem("isAdmin") === "true";
+        if (isAdmin) {
+            const logoutBtn = document.createElement("button");
+            logoutBtn.textContent = "관리자 로그아웃";
+            logoutBtn.style.position = "absolute";
+            logoutBtn.style.top = "10px";
+            logoutBtn.style.right = "10px";
+            document.body.appendChild(logoutBtn);
 
-        logoutBtn.addEventListener("click", () => {
-        localStorage.removeItem("isAdmin");
-        alert("로그아웃 되었습니다.");
-        location.href = "index.html";
+            logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("isAdmin");
+            alert("로그아웃 되었습니다.");
+            location.href = "index.html";
+            });
+        }
         });
-    }
-    });
     </script>
 
     <!-- 모달 스크립트 -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("privacyModal");
-    const openBtn = document.getElementById("openModalBtn");
-    const closeBtn = document.querySelector(".close");
+        document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("privacyModal");
+        const openBtn = document.getElementById("openModalBtn");
+        const closeBtn = document.querySelector(".close");
 
-    openBtn.onclick = function (e) {
-        e.preventDefault();
-        modal.style.display = "block";
-        modal.scrollTop = 0;
-        document.body.classList.add("modal-open");
-    };
+        openBtn.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+            modal.scrollTop = 0;
+            document.body.classList.add("modal-open");
+        };
 
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-        document.body.classList.remove("modal-open");
-    };
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+            document.body.classList.remove("modal-open");
+        };
 
-    window.onclick = function (event) {
-        if (event.target === modal) {
-        modal.style.display = "none";
-        document.body.classList.remove("modal-open");
-        }
-    };
-    });
+        window.onclick = function (event) {
+            if (event.target === modal) {
+            modal.style.display = "none";
+            document.body.classList.remove("modal-open");
+            }
+        };
+        });
 
-    document.addEventListener('DOMContentLoaded', function () {
-    const modal = document.getElementById('privacyModal');
+        document.addEventListener('DOMContentLoaded', function () {
+        const modal = document.getElementById('privacyModal');
 
-    modal.addEventListener('dragstart', function (e) {
-        e.preventDefault();
-    });
+        modal.addEventListener('dragstart', function (e) {
+            e.preventDefault();
+        });
 
-    modal.addEventListener('copy', function (e) {
-        e.preventDefault();
-    });
+        modal.addEventListener('copy', function (e) {
+            e.preventDefault();
+        });
 
-    modal.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
-    });
+        modal.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        });
     </script>
 </body>
 </html>
-
-
