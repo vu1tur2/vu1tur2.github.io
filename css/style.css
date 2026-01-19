@@ -882,7 +882,7 @@ body.modal-open {overflow: hidden;}
 }
 
 .about-section h2 {
-  font-size: 1.8em;
+  font-size: 24px;
   margin-bottom: 20px;
   position: relative;
   padding-left: 15px;
@@ -983,7 +983,10 @@ body.modal-open {overflow: hidden;}
   gap: 5px;
 }
 
-.products-nav a span {font-size: 13.3333px;}
+.products-nav a span {
+  font-size: 13.3333px;
+  font-family: '돋움';
+}
 
 .products-nav a:hover span {
   color: #1A237E;
@@ -1002,6 +1005,8 @@ body.modal-open {overflow: hidden;}
   font-size: 13.3333px;
   padding-top: 2px;
   font-weight: bold;
+  font-family: '돋움';
+  letter-spacing: -0.1em;
 }
 
 #pagination-container {
@@ -1078,6 +1083,7 @@ body.modal-open {overflow: hidden;}
   font-size: 18px;
   font-weight: 700;
   color: #222;
+  font-family: '돋움';
 }
 
 .category-header span {
@@ -1579,7 +1585,7 @@ td img {
   color: #fff;
   padding: 5px 10px;
   letter-spacing: 0.06em;
-  font-family:'돋움';
+  font-family: '돋움';
 }
 
 .css-arrow-1 {
@@ -1608,5 +1614,3 @@ td img {
 }
 
 .sub-box-1 p:hover {border-bottom: 1px solid #000;}
-
-
