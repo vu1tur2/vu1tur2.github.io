@@ -37,7 +37,10 @@ body {
   min-height: 100%;
 }
 
-#wrapper #main-wrap {flex-grow: 1;}
+#wrapper #main-wrap {
+  flex-grow: 1;
+  padding-bottom: 40px;
+}
 
 /* erc 페이지 */
 .ercp-page #wrapper {min-height: 865px;}
@@ -68,6 +71,7 @@ header {
 
 .logo a img {
   width: 100%;
+  max-width: 200px;
   height: 100%;
   object-fit: contain;
 }
@@ -919,7 +923,7 @@ body.modal-open {overflow: hidden;}
 
 #map {
   width: 100%;
-  min-width: 960px;
+  min-width: 920px;
   height: 450px;
   border: 1px solid #ddd;
 }
@@ -1614,3 +1618,15 @@ td img {
 }
 
 .sub-box-1 p:hover {border-bottom: 1px solid #000;}
+
+@media (max-width:480px) {
+
+  header, .products-nav, .subpage-slide, .category-wrap, #slide img, #contents,
+  .first-box, .tab-container
+  {padding: 0 15px;}
+
+  #map {width: 920px !important;}
+  .subpage-box {width: 920px;}
+  .first-box img {width: 380px;}
+  .subpage-slide {border: none;}
+}
