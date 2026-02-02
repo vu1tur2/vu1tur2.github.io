@@ -57,13 +57,6 @@
         <priority>0.7</priority>
     </url>
 
-    <url>
-        <loc>https://vu1tur2.github.io/products_subpage_3.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
     <!-- 소화기 전자내시경시스템 페이지-->
     <url>
         <loc>https://vu1tur2.github.io/subpage-1-1.html</loc>
@@ -331,6 +324,7 @@
         <priority>0.7</priority>
     </url>
 </urlset>
+
 
 
 
